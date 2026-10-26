@@ -7,66 +7,82 @@ Record what the server actually returned for each route. A value
 copied from the documentation without being checked against a real
 request is not a finding.
 
-## GET /posts/1
+
+### GET /posts/1
 
 | Field | Value |
 |---|---|
-| Status code | |
-| Content-Type | |
+| Status code | 200 |
+| Content-Type | application/json; charset=utf-8 |
 
 Response body keys and their types:
 
 | Key | Type | Example value |
 |---|---|---|
-| | | |
-| | | |
-| | | |
-| | | |
+| userId | int | 1 |
+| id | int | 1 |
+| title | str | sunt aut facere repellat provident occaecati excepturi optio reprehenderit |
+| body | str | quia et suscipit... |
 
-## GET /posts
+
+
+### GET /posts
 
 | Field | Value |
 |---|---|
-| Status code | |
-| Content-Type | |
+| Status code | 200 |
+| Content-Type | application/json; charset=utf-8 |
+| Response body type | JSON array (list) |
+| Number of items | 100 |
+| Item type | JSON object |
 
-Shape of the response body (object or array, and the type of each
-element):
+Response body keys and their types:
 
-## POST /posts
+| Key | Type | Example value |
+|---|---|---|
+| userId | int | 1 |
+| id | int | 1 |
+| title | str | sunt aut facere repellat provident occaecati excepturi optio reprehenderit |
+| body | str | quia et suscipit... |
+
+
+
+### POST /posts
+
+| Field | Value |
+|---|---|
+| Status code | 201 |
+| Content-Type | application/json; charset=utf-8 |
 
 Request body sent:
 
 ```json
 {
-  "title": "",
-  "body": "",
+  "title": "Lab 6 API Test",
+  "body": "Testing POST request",
   "userId": 1
 }
 ```
-
-| Field | Value |
-|---|---|
-| Status code | |
-| Content-Type | |
 
 Response body keys and their types:
 
 | Key | Type | Example value |
 |---|---|---|
-| | | |
-| | | |
-| | | |
-| | | |
+| title | str | Lab 6 API Test |
+| body | str | Testing POST request |
+| userId | int | 1 |
+| id | int | 101 |
 
-## DELETE /posts/1
+
+
+### DELETE /posts/1
 
 | Field | Value |
 |---|---|
-| Status code | |
-| Content-Type | |
+| Status code | 200 |
+| Content-Type | application/json; charset=utf-8 |
+| Response body | {} |
 
-Response body:
 
 ## Notes
 
