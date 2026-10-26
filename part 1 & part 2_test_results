@@ -1,0 +1,21 @@
+====================================================== test session starts =======================================================
+platform win32 -- Python 3.12.4, pytest-9.1.1, pluggy-1.6.0 -- C:\Program Files\Python312\python.exe
+cachedir: .pytest_cache
+metadata: {'Python': '3.12.4', 'Platform': 'Windows-11-10.0.26100-SP0', 'Packages': {'pytest': '9.1.1', 'pluggy': '1.6.0'}, 'Plugins': {'html': '4.2.0', 'metadata': '3.1.1'}}
+rootdir: C:\Users\User\Downloads\lab6-rest-api-testing-main\lab6-rest-api-testing-main
+plugins: html-4.2.0, metadata-3.1.1
+collected 11 items                                                                                                                
+
+test_api.py::test_get_tasks_requires_login PASSED                                                                           [  9%]
+test_api.py::test_get_tasks_returns_json_list PASSED                                                                        [ 18%]
+test_api.py::test_create_task_with_valid_data PASSED                                                                        [ 27%]
+test_api.py::test_create_task_with_invalid_data PASSED                                                                      [ 36%]
+test_api.py::test_delete_existing_task PASSED                                                                               [ 45%]
+test_api.py::test_delete_missing_task_returns_404 PASSED                                                                    [ 54%]
+test_api.py::test_create_read_delete_flow PASSED                                                                            [ 63%]
+test_public_api.py::test_get_single_post PASSED                                                                             [ 72%]
+test_public_api.py::test_get_all_posts PASSED                                                                               [ 81%]
+test_public_api.py::test_create_post PASSED                                                                                 [ 90%]
+test_public_api.py::test_delete_post PASSED                                                                                 [100%]
+
+====================================================== 11 passed in 29.80s =======================================================
